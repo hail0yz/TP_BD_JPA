@@ -1,0 +1,16 @@
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/service/AuthorServiceImpl.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/dao/AuthorDAO.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/data/Category.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/dao/CRUDRepository.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/Main.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/service/CategoryServiceImpl.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/service/AuthorService.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/service/BookService.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/data/PaperBook.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/dao/CategoryDAO.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/data/Book.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/data/Author.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/service/BookServiceImpl.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/dao/BookDAO.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/data/Ebook.java
+/home/victoria/Documents/Master/M1/BD/tpbdjpa/src/main/java/org/tp/service/CategoryService.java
