@@ -1,3 +1,9 @@
+/*
+LAGRANGE Victoria
+TP DE BASE DE DONNEES A L UGA 
+SUR UNE BASE DE CODE PAR PR. FABRICE JOUANOT */
+
+
 package org.tp;
 
 import jakarta.persistence.EntityManagerFactory;
@@ -51,12 +57,8 @@ public class Main {
         bookService.createbook(ebook1);
 
        
-    
-
-        // ToDo: Recherche d'un livre par son Id (par exemple avec l'ID du paperbook précédent)
-        // ET on afficha sa catégorie
-        Book foundBook = // On utilise le service bookService;
-        Category foundCategory = // On extrait la catégorie à l'aide d'un getter;
+        Book foundBook = bookService.findBookById(paperbook1.getId());
+        Category foundCategory = foundBook.getCategory(); // Assuming the Book has a getCategory() method
         System.out.println("Category of PaperBook 1: " + foundCategory.getName());
 
         // Recherche d'auteurs d'un livre
@@ -66,13 +68,19 @@ public class Main {
             System.out.println("Author Name: " + author.getName());
         }
 
-        // ToDo: Recherche de livres par catégorie (Fiction par exemple), on affiche juste les titres
-        // On utilise la méthode de bookService pour une recherche
-        // On parcours la liste résultat pour afficher les titres de livres
-        
+        // Recherche de livres par catégorie (Fiction par exemple)
+        List<Book> booksByCategory = bookService.findBooksByCategory(fictionCategory); // Replace with actual method
+        System.out.println("Books in Fiction category:");
+        for (Book book : booksByCategory) {
+            System.out.println("Book Title: " + book.getTitle());
+        }
 
-        // ToDo: Recherche de livres par auteur (par exemple ar l'Author 1 créé avant), on affiche juste les titres
-        // idem recherche par catégorie dans le principe
+        // Recherche de livres par auteur (par exemple Author 1)
+        List<Book> booksByAuthor = bookService.findBooksByAuthor(author1); // Replace with actual method
+        System.out.println("Books by Author 1:");
+        for (Book book : booksByAuthor) {
+            System.out.println("Book Title: " + book.getTitle());
+        }
 
         // Fermeture de l'EntityManagerFactory
         emf.close();
