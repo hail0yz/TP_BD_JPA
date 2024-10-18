@@ -23,21 +23,35 @@ public class Main {
         AuthorService authorService = new AuthorServiceImpl(emf);
         Author author1 = new Author();
         author1.setName("Author 1");
+        author1.setId(100001);
         authorService.createAuthor(author1);
 
         Author author2 = new Author();
         author2.setName("Author 2");
+        author2.setId(100002);
         authorService.createAuthor(author2);
 
         BookService bookService = new BookServiceImpl(emf);
         // ToDo: Création d'un PaperBook de titre PaerperBook1 et de 200 pages
         // Ajouter les auteurs Author1 et Author2 comme auteurs de ce livre
+        PaperBook paperbook1 = new PaperBook();
+        paperbook1.setId(200001);
+        paperbook1.setTitle("PaerperBook1");
+        paperbook1.setPageCount(200);
+        Set<Author> authors = new Set<Author>;
+        authors.add(author1);
+        authors.add(author2);
+        paperbook1.setAuthors(authors);
+        bookService.createbook(paperbook1);
+        Ebook ebook1 = new Ebook();
+        ebook1.setId(300001);
+        ebook1.setTitle("Ebook1");
+        ebook1.setFormat("PDF");
+        paperbook1.setAuthors(authors);
+        bookService.createbook(ebook1);
 
-        // ToDo: Faire persister ce livre à l'aide du service bookService (c'est une création)
        
-
-        // ToDo: refaire la même chose avec un Ebook de titre EBook1 et de format PDF.
-        
+    
 
         // ToDo: Recherche d'un livre par son Id (par exemple avec l'ID du paperbook précédent)
         // ET on afficha sa catégorie

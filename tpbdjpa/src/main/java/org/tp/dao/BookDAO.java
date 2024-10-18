@@ -17,7 +17,7 @@ public class BookDAO implements CRUDRepository<Book> {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         em.persist(book);
-        em.getTransaction.commit;
+        em.getTransaction().commit();
         em.close();
     }
     @Override
@@ -60,7 +60,7 @@ public class BookDAO implements CRUDRepository<Book> {
 
     public List<Book> findBooksByCategoryName(String categoryName) {
         EntityManager em = emf.createEntityManager();
-        TypedQuery<Book> query = em.createQuery("SELECT a From Book b WHERE b.category = :categoryName",Book.class);
+        TypedQuery<Book> query = em.createQuery("SELECT a From Book b WHERE b.category = :categoryName;",Book.class);
         List<Book> books = query.getResultList();
         em.close();
         return books;
